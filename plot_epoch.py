@@ -77,8 +77,6 @@ class PlotGraph():
     
     def plot_graph(self):
         plt.clf()
-        for i in range(0,len(self.av_vals_arr)):
-            self.av_vals_arr[i]=self.av_vals_arr[i]-self.BASELINE
         plt.plot(self.timestamps_arr,self.av_vals_arr)
         plt.grid()
         plt.pause(2)
